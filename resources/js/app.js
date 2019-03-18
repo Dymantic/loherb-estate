@@ -1,30 +1,8 @@
-import { SuperHero } from "./components/SuperHero";
-import Hammer from "hammerjs";
+import jump from "jump.js";
 
-window.superHero = new SuperHero();
+const jump_link = document.querySelector('[data-banner-jump]');
 
-superHero.init()
-         .then(() => {
-             const hammertime = new Hammer(document.querySelector('.banner'));
-             hammertime.on('swipe', ev => {
-                 if(ev.deltaX > 20) {
-                     return superHero.showNext();
-                 }
-
-                 if(ev.deltaX < 20) {
-                     return superHero.showPrev();
-                 }
-             });
-
-             document.body.addEventListener('keyup', ({code}) => {
-                 if(code === 'ArrowLeft') {
-                     return superHero.showPrev();
-                 }
-
-                 if(code === 'ArrowRight') {
-                     return superHero.showNext();
-                 }
-             });
-         })
-    .catch(() => console.log('failed to initialise banner'));
+jump_link.addEventListener('click', () => {
+    jump('.first-section');
+});
 

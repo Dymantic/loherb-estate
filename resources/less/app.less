@@ -8,56 +8,20 @@
 @tailwind preflight;
 
 .banner {
-  height: calc(100vh - 10rem);
+  height: 100vh;
   background-color: #0f2f21;
+  background-size: cover;
+  background-image: url(../images/estate_banner.jpg);
 
   @media screen and (max-width: 576px) {
-    height: calc(100vh - 4rem);
+    height: 100vw;
   }
 }
 
-.villa::before, .cuisine::before, .estate::before{
-  content: "";
-  display: inline-block;
-  height: 0;
-  width: 1px;
-  padding-bottom: 100%;
+footer {
+  background: url(../images/estate_footer.jpg);
+  background-size: 8px auto;
 }
-
-.villa {
-  background-image: url(../images/villa_banner.jpg);
-  background-size: cover;
-  transition: .3s;
-}
-
-.cuisine {
-  background-image: url(../images/cuisine_banner.jpg);
-  background-size: cover;
-  transition: .3s;
-}
-
-.estate {
-  background-image: url(../images/estate_banner.jpg);
-  background-size: cover;
-  transition: .3s;
-}
-
-.sites:hover a {
-  opacity: .75;
-}
-
-.sites a.villa:hover {
-  opacity: 1;
-}
-
-.sites a.cuisine:hover {
-  opacity: 1;
-}
-
-.sites a.estate:hover {
-  opacity: 1;
-}
-
 .body-font {
   @apply .font-serif;
 }
@@ -66,22 +30,6 @@
   @apply .font-sans .font-thin;
 }
 
-.banner .banner-controls {
-  transition: .3s;
-  transform: translateY(100px);
-}
-
-.banner.ready .banner-controls {
-  transform: translateY(0);
-}
-
-.banner svg, .banner h1 {
-  transition: 1s;
-}
-
-.banner.active svg, .banner.active h1 {
-  opacity: 0;
-}
 
 .main-nav:lang(zh) > a {
   @media screen and (max-width: 576px) {

@@ -46,6 +46,7 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
     'transparent': 'transparent',
 
+    'blue-main': '#0a2e64',
     'green-main': '#084137',
     'hover-green': '#346c62',
     'green-soft': '#daede7',

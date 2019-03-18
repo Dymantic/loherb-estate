@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@yield('title', 'Loherb Group')</title>
+    <title>@yield('title', 'Loherb Estate')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="alternate" hreflang="{{ app()->getLocale() === 'en' ? 'zh' : 'en' }}" href="{{ url(transUrl(Request::path())) }}">
 
@@ -13,8 +13,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="theme-color" content="#1b1c1b">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#0a2e64">
 
     @if(app()->getLocale() === 'en')
         <link rel="stylesheet" href="https://use.typekit.net/mza6wie.css">
