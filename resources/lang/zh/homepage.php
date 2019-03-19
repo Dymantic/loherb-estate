@@ -2,8 +2,8 @@
 
 return [
     'meta' => [
-        'title' => 'Loherb Estate',
-        'description' => ''
+        'title' => '日光物業 - 永續物產開發 - 台灣',
+        'description' => '日光物業致力於物產永續發展，追求長期最佳化與地方共榮。並本著日光集團生態自然的精神，建立人、土地、資本的和諧成長。朝向創新、永續、共榮之願景邁進。'
     ],
     'nav' => [
         'estate' => '日光物業',
@@ -13,8 +13,8 @@ return [
     ],
     'banner' => '一同體驗日光生活',
     'intro' => [
-        'part_one' => 'Loherb Estate focuses on ecologically aware estate and property development that enhances lifestyle with zero impact on the local environment.',
-        'part_two' => 'For more information about Loherb Estate please feel free to contact us.'
+        'part_one' => '日光物業專精物業管理與不動產投資開發案推動。致力於物產永續發展，追求長期最佳化與地方共榮，建立人、土地、資本的和諧成長。',
+        'part_two' => ''
     ],
     'footer' => [
         'address' => '(269)宜蘭縣冬山鄉寶福路372號',

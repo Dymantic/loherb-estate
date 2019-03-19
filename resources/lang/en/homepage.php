@@ -2,7 +2,7 @@
 
 return [
     'meta' => [
-        'title' => 'Loherb Estate - Estate Development - Yilan, Taiwan',
+        'title' => 'Loherb Estate - Estate Development - Taiwan',
         'description' => 'Estate development in Taiwan with an emphasis on ecological and environmental awareness.'
     ],
     'nav' => [
