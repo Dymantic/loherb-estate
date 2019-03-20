@@ -6,7 +6,7 @@
 
 @section('head')
     @include('ogmeta', [
-        'ogImage' => url('/images/main_facebook.jpg'),
+        'ogImage' => url('/images/estate_facebook.jpg'),
         'ogTitle' => trans('homepage.meta.title'),
         'ogDescription' => trans('homepage.meta.description')
     ])
@@ -54,10 +54,10 @@
 {
   "@context": "http://www.schema.org",
   "@type": "Corporation",
-  "name": "Loherb Group",
-  "url": "https://loherb.com.tw/",
-  "logo": "https://loherb.com.tw/images/logos/logo_main.svg",
-  "description": "The Loherb Group is a premium lifestyle brand. Our group includes Loherb Villa, luxury hotel accommodation in Yilan, and Loherb Cuisine, which offers a fine dining experience.",
+  "name": "Loherb Estate",
+  "url": "https://estate.loherb.com.tw/",
+  "logo": "https://estate.loherb.com.tw/images/logos/logo_main.svg",
+  "description": "Estate development in Taiwan with an emphasis on ecological and environmental awareness.",
   "address": {
 		"@type": "PostalAddress",
 		"addressCountry": "Taiwan",
