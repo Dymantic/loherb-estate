@@ -1,1 +1,1 @@
-<section class="estate-facade banner-height"></section>
+<section class="estate-facade section-height"></section>
