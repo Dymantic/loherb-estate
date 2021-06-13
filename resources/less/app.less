@@ -1,67 +1,85 @@
 @font-face {
-  font-family: "transat-bold";
-  src: url(../fonts/transat_bold-webfont.woff), url(../fonts/transat_bold-webfont.woff2);
-  font-style: normal;
-  font-weight: bold;
+    font-family: "transat-bold";
+    src: url(../fonts/transat_bold-webfont.woff),
+    url(../fonts/transat_bold-webfont.woff2);
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "transat-bold";
+    src: url(../fonts/transat_standard-webfont.woff),
+    url(../fonts/transat_standard-webfont.woff2),
+    url(../fonts/transat_standard-webfont.ttf);
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 @tailwind base;
 
-@import "type";
+@layer utilities {
+    @import "type";
+    @import "animations";
+    @import "usher";
 
-.banner {
-  background-image: url(../images/estate_banner.jpg);
+    .banner {
+        background-image: url(../images/estate_banner.jpg);
+    }
+
+    footer {
+        background: url(../images/estate_footer.jpg);
+        background-size: 8px auto;
+    }
+
+    .body-font:lang(zh) {
+    @apply font-sans font-thin;
+    }
+
+
+    .main-nav:lang(zh) > a {
+        @media screen and (max-width: 576px) {
+            font-size: 80%;
+        }
+    }
+
+    .banner-height {
+        height: 56.25vw;
+
+        @media screen and (max-width: 576px) {
+            height: 100vw;
+        }
+    }
+
+    .section-height {
+        height: 50vw;
+
+        @media screen and (max-width: 576px) {
+            height: 150vw;
+        }
+    }
+
+    .section-height {
+        min-height: 50vw;
+
+        @media screen and (max-width: 576px) {
+            min-height: 150vw;
+        }
+    }
+
+    .estate-facade {
+        background-image: url(../images/homepage/estate_facade.jpg);
+        background-size: cover;
+    }
+
+    .villa-shoutout {
+        background-image: url(../images/homepage/estate_villa_shoutout.jpg);
+        background-size: cover;
+    }
+
 }
 
-footer {
-  background: url(../images/estate_footer.jpg);
-  background-size: 8px auto;
-}
-
-.body-font:lang(zh) {
-  @apply font-sans font-thin;
-}
-
-
-.main-nav:lang(zh) > a {
-  @media screen and (max-width: 576px) {
-    font-size: 80%;
-  }
-}
-
-.banner-height {
-  height: 56.25vw;
-
-  @media screen and (max-width: 576px) {
-    height: 100vw;
-  }
-}
-
-.section-height {
-  height: 50vw;
-
-  @media screen and (max-width: 576px) {
-    height: 150vw;
-  }
-}
-
-.section-height {
-  min-height: 50vw;
-
-  @media screen and (max-width: 576px) {
-    min-height: 150vw;
-  }
-}
-
-.estate-facade {
-  background-image: url(../images/homepage/estate_facade.jpg);
-  background-size: cover;
-}
-
-.villa-shoutout {
-  background-image: url(../images/homepage/estate_villa_shoutout.jpg);
-  background-size: cover;
-}
 
 
 
